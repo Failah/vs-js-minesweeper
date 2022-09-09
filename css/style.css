@@ -8,25 +8,35 @@
 
 body {
   font-family: sans-serif;
+  background-color: bisque;
 }
 
 /* utilities */
 
-/* content */
 
-.container{
+/* contents */
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-#grid{
+.button-container {
+  margin: 10px 0px;
+}
+
+#game-start-btn {
+  margin-right: 25px;
+}
+
+#grid {
   display: flex;
   flex-wrap: wrap;
 }
 
-.cell{
+.cell {
+  background-color: white;
   border: 2px solid black;
-  width: calc(100% / 10);
   padding: 50px 0px;
   cursor: pointer;
   display: flex;
@@ -49,16 +59,17 @@ body {
 .cell.free {
   background-color: aqua;
 }
+
 .cell.bomb {
   background-color: red;
 }
 
-.grid-container{
+.grid-container {
   position: relative;
 }
 
-.grid-container .message{
-position: absolute;
+.grid-container .message {
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
