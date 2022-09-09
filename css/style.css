@@ -7,8 +7,12 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Verdana, sans-serif;
   background-color: rgb(12, 58, 31);
+}
+
+img {
+  width: 100%;
 }
 
 /* utilities */
@@ -47,6 +51,11 @@ body {
   flex-wrap: wrap;
 }
 
+#grid div {
+  color: yellow;
+  font-size: 3rem;
+}
+
 .cell {
   background-color: white;
   border: 2px solid black;
@@ -59,14 +68,17 @@ body {
 
 .cell.easy {
   width: calc(100% / 10);
+  height: 118px;
 }
 
 .cell.medium {
   width: calc(100% / 9);
+  height: 131px;
 }
 
 .cell.hard {
   width: calc(100% / 7);
+  height: 171px;
 }
 
 .cell.free {
