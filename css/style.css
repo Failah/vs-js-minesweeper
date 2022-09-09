@@ -8,7 +8,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: bisque;
+  background-color: rgb(12, 58, 31);
 }
 
 /* utilities */
@@ -22,11 +22,24 @@ body {
 }
 
 .button-container {
+  padding: 15px;
   margin: 10px 0px;
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+.button-container span {
+  color: black;
 }
 
 #game-start-btn {
   margin-right: 25px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 #grid {
@@ -85,4 +98,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+
+/* effects */
+
+#game-start-btn:active {
+  transform: scale(0.95);
 }
